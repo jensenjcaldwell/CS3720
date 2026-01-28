@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: MyModule
+Version: 0.1.1
+Summary: A package for loading and analyzing CSV data using pandas.
+Author: Jensen Caldwell
+Author-email: 10786608@uvu.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-python
+Dynamic: summary
