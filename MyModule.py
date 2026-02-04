@@ -88,6 +88,25 @@ class data_analyzer:
         total_missing = missing_values.sum()
         return total_missing
     
+    def column_values_generator(self, column_name):
+        """
+        Generator function that yields values from a specific column row by row.
+        
+        Parameters:
+        column_name (str): Name of the column to iterate through.
+        
+        Yields:
+        Any: The value in the specified column for each row.
+        
+        Raises:
+        ValueError: If the column name doesn't exist in the DataFrame.
+        """
+        if column_name not in self.df.columns:
+            raise ValueError(f"Column '{column_name}' not found in DataFrame. Available columns: {list(self.df.columns)}")
+        
+        for index, row in self.df.iterrows():
+            yield row[column_name]
+    
 class DataStore:
     """
     Class to handle data storage operations.
