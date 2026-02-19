@@ -1,0 +1,311 @@
+2026-02-03 21:11:49,217 INFO MyModule - Loading data from CSV file: data/Weather Training Data.csv
+2026-02-03 21:11:49,342 INFO MyModule - Data loaded successfully from CSV file: data/Weather Training Data.csv
+2026-02-03 21:11:49,557 INFO MyModule - Starting to yield values from column: MinTemp
+2026-02-03 21:11:49,614 INFO MyModule - Starting to yield pairs from columns: MinTemp, MaxTemp
+2026-02-03 21:11:50,196 INFO MyModule - Data saved to output\processed_weather_data.csv
+2026-02-09 20:48:50,380 INFO MyModule - Loading data from CSV file: data/Weather Training Data.csv
+2026-02-09 20:48:50,532 INFO MyModule - Data loaded successfully from CSV file: data/Weather Training Data.csv
+2026-02-09 20:48:50,533 INFO MyModule - Loading data from CSV file: data/non_existent_file.csv
+2026-02-09 20:48:50,534 ERROR MyModule - An error occurred while loading the data
+Traceback (most recent call last):
+  File "d:\Repositories\CS3720\MyModule.py", line 61, in fetch
+    data_frame = pd.read_csv(self.file_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/non_existent_file.csv'
+2026-02-09 20:48:50,549 INFO MyModule - Starting to yield values from column: MinTemp
+2026-02-09 20:48:50,550 INFO MyModule - Starting to yield pairs from columns: MinTemp, MaxTemp
+2026-02-09 20:48:50,554 INFO MyModule - Data saved to test_output\test_weather_data.csv
+2026-02-09 20:49:46,940 INFO MyModule - Loading data from CSV file: data/Weather Training Data.csv
+2026-02-09 20:49:47,085 INFO MyModule - Data loaded successfully from CSV file: data/Weather Training Data.csv
+2026-02-09 20:49:47,087 INFO MyModule - Loading data from CSV file: data/non_existent_file.csv
+2026-02-09 20:49:47,088 ERROR MyModule - An error occurred while loading the data
+Traceback (most recent call last):
+  File "d:\Repositories\CS3720\MyModule.py", line 61, in fetch
+    data_frame = pd.read_csv(self.file_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/non_existent_file.csv'
+2026-02-09 20:49:47,105 INFO MyModule - Starting to yield values from column: MinTemp
+2026-02-09 20:49:47,106 INFO MyModule - Starting to yield pairs from columns: MinTemp, MaxTemp
+2026-02-09 20:49:47,110 INFO MyModule - Data saved to test_output\test_weather_data.csv
+2026-02-09 20:50:38,798 INFO MyModule - Loading data from CSV file: data/Weather Training Data.csv
+2026-02-09 20:50:38,931 INFO MyModule - Data loaded successfully from CSV file: data/Weather Training Data.csv
+2026-02-09 20:50:38,932 INFO MyModule - Loading data from CSV file: data/non_existent_file.csv
+2026-02-09 20:50:38,933 ERROR MyModule - An error occurred while loading the data
+Traceback (most recent call last):
+  File "d:\Repositories\CS3720\MyModule.py", line 61, in fetch
+    data_frame = pd.read_csv(self.file_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/non_existent_file.csv'
+2026-02-09 20:50:38,947 INFO MyModule - Starting to yield values from column: MinTemp
+2026-02-09 20:50:38,948 INFO MyModule - Starting to yield pairs from columns: MinTemp, MaxTemp
+2026-02-09 20:50:38,950 INFO MyModule - Data saved to test_output\test_weather_data.csv
+2026-02-09 20:51:21,886 INFO MyModule - Loading data from CSV file: data/Weather Training Data.csv
+2026-02-09 20:51:22,020 INFO MyModule - Data loaded successfully from CSV file: data/Weather Training Data.csv
+2026-02-09 20:51:22,022 INFO MyModule - Loading data from CSV file: data/non_existent_file.csv
+2026-02-09 20:51:22,023 ERROR MyModule - An error occurred while loading the data
+Traceback (most recent call last):
+  File "d:\Repositories\CS3720\MyModule.py", line 61, in fetch
+    data_frame = pd.read_csv(self.file_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/non_existent_file.csv'
+2026-02-09 20:51:22,096 INFO MyModule - Starting to yield values from column: MinTemp
+2026-02-09 20:51:22,098 INFO MyModule - Starting to yield pairs from columns: MinTemp, MaxTemp
+2026-02-09 20:51:22,102 INFO MyModule - Data saved to test_output\test_weather_data.csv
+2026-02-09 20:51:47,767 INFO MyModule - Loading data from CSV file: data/Weather Training Data.csv
+2026-02-09 20:51:47,926 INFO MyModule - Data loaded successfully from CSV file: data/Weather Training Data.csv
+2026-02-09 20:51:47,928 INFO MyModule - Loading data from CSV file: data/non_existent_file.csv
+2026-02-09 20:51:47,929 ERROR MyModule - An error occurred while loading the data
+Traceback (most recent call last):
+  File "d:\Repositories\CS3720\MyModule.py", line 61, in fetch
+    data_frame = pd.read_csv(self.file_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/non_existent_file.csv'
+2026-02-09 20:51:48,001 INFO MyModule - Starting to yield values from column: MinTemp
+2026-02-09 20:51:48,002 INFO MyModule - Starting to yield pairs from columns: MinTemp, MaxTemp
+2026-02-09 20:51:48,005 INFO MyModule - Data saved to test_output\test_weather_data.csv
+2026-02-09 20:53:28,854 INFO MyModule - Loading data from CSV file: data/Weather Training Data.csv
+2026-02-09 20:53:29,026 INFO MyModule - Data loaded successfully from CSV file: data/Weather Training Data.csv
+2026-02-09 20:53:29,027 INFO MyModule - Loading data from CSV file: data/non_existent_file.csv
+2026-02-09 20:53:29,028 ERROR MyModule - An error occurred while loading the data
+Traceback (most recent call last):
+  File "d:\Repositories\CS3720\MyModule.py", line 61, in fetch
+    data_frame = pd.read_csv(self.file_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/non_existent_file.csv'
+2026-02-09 20:53:29,108 INFO MyModule - Starting to yield values from column: MinTemp
+2026-02-09 20:53:29,109 INFO MyModule - Starting to yield pairs from columns: MinTemp, MaxTemp
+2026-02-09 20:53:29,112 INFO MyModule - Data saved to test_output\test_weather_data.csv
+2026-02-09 20:54:30,040 INFO MyModule - Loading data from CSV file: data/Weather Training Data.csv
+2026-02-09 20:54:30,183 INFO MyModule - Data loaded successfully from CSV file: data/Weather Training Data.csv
+2026-02-09 20:54:30,184 INFO MyModule - Loading data from CSV file: data/non_existent_file.csv
+2026-02-09 20:54:30,185 ERROR MyModule - An error occurred while loading the data
+Traceback (most recent call last):
+  File "d:\Repositories\CS3720\MyModule.py", line 61, in fetch
+    data_frame = pd.read_csv(self.file_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/non_existent_file.csv'
+2026-02-09 20:54:30,259 INFO MyModule - Starting to yield values from column: MinTemp
+2026-02-09 20:54:30,261 INFO MyModule - Starting to yield pairs from columns: MinTemp, MaxTemp
+2026-02-09 20:54:30,265 INFO MyModule - Data saved to test_output\test_weather_data.csv
+2026-02-09 20:56:41,075 INFO MyModule - Loading data from CSV file: data/Weather Training Data.csv
+2026-02-09 20:56:41,223 INFO MyModule - Data loaded successfully from CSV file: data/Weather Training Data.csv
+2026-02-09 20:56:41,224 INFO MyModule - Loading data from CSV file: data/non_existent_file.csv
+2026-02-09 20:56:41,225 ERROR MyModule - An error occurred while loading the data
+Traceback (most recent call last):
+  File "d:\Repositories\CS3720\MyModule.py", line 61, in fetch
+    data_frame = pd.read_csv(self.file_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/non_existent_file.csv'
+2026-02-09 20:56:41,331 INFO MyModule - Starting to yield values from column: MinTemp
+2026-02-09 20:56:41,332 INFO MyModule - Starting to yield pairs from columns: MinTemp, MaxTemp
+2026-02-09 20:56:41,335 INFO MyModule - Data saved to test_output\test_weather_data.csv
+2026-02-09 20:56:59,484 INFO MyModule - Loading data from CSV file: data/Weather Training Data.csv
+2026-02-09 20:56:59,628 INFO MyModule - Data loaded successfully from CSV file: data/Weather Training Data.csv
+2026-02-09 20:56:59,629 INFO MyModule - Loading data from CSV file: data/non_existent_file.csv
+2026-02-09 20:56:59,630 ERROR MyModule - An error occurred while loading the data
+Traceback (most recent call last):
+  File "d:\Repositories\CS3720\MyModule.py", line 61, in fetch
+    data_frame = pd.read_csv(self.file_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/non_existent_file.csv'
+2026-02-09 20:56:59,638 INFO MyModule - Starting to yield values from column: MinTemp
+2026-02-09 20:56:59,639 INFO MyModule - Starting to yield pairs from columns: MinTemp, MaxTemp
+2026-02-09 20:56:59,642 INFO MyModule - Data saved to test_output\test_weather_data.csv

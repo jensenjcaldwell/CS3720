@@ -32,9 +32,9 @@ All data was sourced from the Kaggle Australia Weather Data set and can be found
             df_details(): Print details about the DataFrame including info, description, missing values, and shape.
             print_column_stats(): Print statistics for each column in the DataFrame.
             missing_values_summary(): Calculate total missing values in the DataFrame.
+            column_values_generator(column_name): Generator to yield values from a specified column.
+            column_pairs_iterator(col1, col2): Generator to yield pairs of values from two specified columns. Useful for comparisons
 
-        Returns:
-            int: Total number of missing values across all columns.
 
     DataStore
         Class to handle data storage operations.
@@ -94,6 +94,12 @@ Several OOP principles were implemented in this project, including:
     Single Responsibility Principle: Each class has a single responsibility. The fetcher class is responsible for defining the interface for data fetching, the csv_fetcher class is responsible for fetching CSV data, and the data_analyzer class is responsible for analyzing DataFrame data. This separation of concerns makes the code easier to maintain and understand.
 
 
+## Implementation of Generators
+    Generators were implemented in the data_analyzer class to efficiently handle large datasets. By using generators, we can iterate over large DataFrames without loading the entire dataset into memory at once. This is particularly useful for operations like calculating column statistics or processing rows of data, where we can yield one item at a time instead of returning a complete list. This approach reduces memory consumption and improves performance when working with big data.
 
+## Logging
+    Logging was implemented throughout the code, logs are saved to the output/app.log file. This is helpful for troubleshooting and understanding the flow of the application. Key events such as data fetching, analysis steps, and errors are logged.
 
+## Testing
+    Unit tests were written using pytest to test the csv_fetcher, data_analyzer, and DataStore classes. The tests cover various scenarios, including valid and invalid file paths for csv_fetcher, analysis of DataFrame details and missing values in data_analyzer, and saving DataFrames to CSV files in DataStore. The tests ensure that the classes behave as expected and handle edge cases appropriately.
 

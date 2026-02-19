@@ -25,6 +25,23 @@ if __name__ == "__main__":
         
         print("\n--- First 5 Rows of DataFrame ---")
         print(df.head())
+
+        example_tracker = 0 # Limit output for demonstration
+        for val in analyzer_instance.column_values_generator('MinTemp'):
+            if example_tracker >= 5:
+                break
+            example_tracker += 1
+            print(f" MinTemp value: {val}")
+
+        example_tracker = 0 # Limit output for demonstration
+        for mintemp, maxtemp in analyzer_instance.column_pairs_iterator('MinTemp', 'MaxTemp'):
+            if example_tracker >= 5:
+                break
+            example_tracker += 1
+            print(f" MinTemp: {mintemp}, MaxTemp: {maxtemp}")
+            print(f" Difference: {int(maxtemp - mintemp)}")
+
+
         
 
         print("\n--- Data Storage ---")

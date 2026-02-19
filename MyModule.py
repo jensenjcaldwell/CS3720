@@ -1,5 +1,23 @@
+import logging
+import os
 import pandas as pd
 from abc import ABC, abstractmethod
+
+
+LOG_DIR = os.path.join(os.path.dirname(__file__), "output")
+os.makedirs(LOG_DIR, exist_ok=True)
+LOG_FILE = os.path.join(LOG_DIR, "app.log")
+
+logger = logging.getLogger(__name__)
+if not logger.handlers:
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s %(levelname)s %(name)s - %(message)s",
+        handlers=[
+            logging.StreamHandler(),
+            logging.FileHandler(LOG_FILE, encoding="utf-8"),
+        ],
+    )
 
 
 class fetcher(ABC):
@@ -38,12 +56,14 @@ class csv_fetcher(fetcher):
         Returns:
         pd.DataFrame: The loaded data as a pandas DataFrame.
         """
+        logger.info("Loading data from CSV file: %s", self.file_path)
         try:
             data_frame = pd.read_csv(self.file_path)
+            logger.info("Data loaded successfully from CSV file: %s", self.file_path)
             return data_frame
         except Exception as e:
-            print(f"An error occurred while loading the data: {e}")
-            return None
+            logger.exception("An error occurred while loading the data")
+            raise e
 
 class data_analyzer:
     def __init__(self, df):
@@ -58,12 +78,12 @@ class data_analyzer:
         """
         print("DataFrame Info:")
         self.df.info()
-        print("\nDataFrame Description:")
-        self.df.describe(include='all')
-        print("\nMissing Values in Each Column:")
-        self.df.isnull().sum()
-        print("\nNumber of rows and columns:")
-        self.df.shape
+        print("DataFrame Description:")
+        print(self.df.describe(include='all'))
+        print("Missing Values in Each Column:")
+        print(self.df.isnull().sum())
+        print("Number of rows and columns:")
+        print(self.df.shape)
 
     def print_column_stats(self):
         """
@@ -72,9 +92,11 @@ class data_analyzer:
         Parameters:
         df (pd.DataFrame): The DataFrame to analyze.
         """
+        logger.info("Printing column statistics:")
         for column in self.df.columns:
-            print(f"\nStatistics for column: {column}")
-            print(self.df[column].describe())
+            logger.info("Statistics for column: %s", column)
+            logger.info("%s", self.df[column].describe())
+        logger.info("Completed printing column statistics.")
             
 
     def missing_values_summary(self):
@@ -102,10 +124,34 @@ class data_analyzer:
         ValueError: If the column name doesn't exist in the DataFrame.
         """
         if column_name not in self.df.columns:
+            logger.error("Column '%s' not found in DataFrame", column_name)
             raise ValueError(f"Column '{column_name}' not found in DataFrame. Available columns: {list(self.df.columns)}")
-        
+
+        logger.info("Starting to yield values from column: %s", column_name)
         for index, row in self.df.iterrows():
             yield row[column_name]
+        
+
+    def column_pairs_iterator(self, col1, col2):
+        """
+        Iterate through two columns simultaneously as tuples.
+        
+        Parameters:
+        col1, col2 (str): Names of columns to iterate.
+        
+        Yields:
+        tuple: (value from col1, value from col2).
+        """
+
+        if col1 not in self.df.columns or col2 not in self.df.columns:
+            logger.error("One or both columns '%s', '%s' not found in DataFrame", col1, col2)
+            raise ValueError(f"One or both columns '{col1}', '{col2}' not found in DataFrame. Available columns: {list(self.df.columns)}")
+        
+        logger.info("Starting to yield pairs from columns: %s, %s", col1, col2)
+        for val1, val2 in zip(self.df[col1], self.df[col2]):
+            yield (val1, val2)
+
+    
     
 class DataStore:
     """
@@ -139,7 +185,7 @@ class DataStore:
         os.makedirs(self.output_dir, exist_ok=True)
         output_path = os.path.join(self.output_dir, filename)
         df.to_csv(output_path, index=False)
-        print(f"Data saved to {output_path}")
+        logger.info("Data saved to %s", output_path)
         return output_path
 
 
@@ -151,7 +197,20 @@ if __name__ == "__main__":
     fetcher_instance = csv_fetcher(file_path)
     df = fetcher_instance.fetch()
     if df is not None:
-        print("Data loaded successfully:")
         analyzer_instance = data_analyzer(df)
         analyzer_instance.df_details()
         print(df.head())  # Display the first few rows of the DataFrame
+
+        example_tracker = 0 # Limit output for demonstration
+        for value in analyzer_instance.column_values_generator('MinTemp'):
+            if example_tracker >= 5:
+                break
+            example_tracker += 1
+            print(value)  # Example of using the generator
+
+        example_tracker = 0 # Limit output for demonstration
+        for value in analyzer_instance.column_pairs_iterator('MinTemp', 'Rainfall'):
+            if example_tracker >= 5:
+                break
+            example_tracker += 1
+            print(value)  # Example of using the generator

@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: MyModule
-Version: 0.1.1
+Version: 0.1.2
 Summary: A package for loading and analyzing CSV data using pandas.
 Author: Jensen Caldwell
 Author-email: 10786608@uvu.edu
