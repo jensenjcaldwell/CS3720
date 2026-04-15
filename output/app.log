@@ -309,3 +309,438 @@ FileNotFoundError: [Errno 2] No such file or directory: 'data/non_existent_file.
 2026-02-09 20:56:59,638 INFO MyModule - Starting to yield values from column: MinTemp
 2026-02-09 20:56:59,639 INFO MyModule - Starting to yield pairs from columns: MinTemp, MaxTemp
 2026-02-09 20:56:59,642 INFO MyModule - Data saved to test_output\test_weather_data.csv
+2026-02-18 17:56:57,884 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-18 17:56:58,092 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-18 17:56:58,294 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-18 17:56:58,345 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-18 17:56:58,346 INFO __main__ - Plotting histogram for column: MinTemp
+2026-02-18 17:59:42,019 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-18 17:59:42,145 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-18 17:59:42,320 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-18 17:59:42,370 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-18 18:00:00,879 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:00:01,007 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:00:01,179 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-18 18:00:01,229 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-18 18:00:01,230 INFO __main__ - Plotting histogram for column: MinTemp
+2026-02-18 18:02:06,871 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:02:07,000 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:02:07,181 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-18 18:02:07,236 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-18 18:02:07,237 INFO __main__ - Plotting histogram for column: MinTemp
+2026-02-18 18:02:09,506 INFO __main__ - Plotting scatter plot for columns: MinTemp, MaxTemp
+2026-02-18 18:03:37,046 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:03:37,185 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:03:37,368 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-18 18:03:37,420 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-18 18:03:37,421 INFO __main__ - Plotting histogram for column: MinTemp
+2026-02-18 18:03:39,920 INFO __main__ - Plotting scatter plot for columns: MinTemp, MaxTemp
+2026-02-18 18:04:41,631 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:04:41,780 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:04:41,958 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-18 18:04:42,011 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-18 18:04:42,012 INFO __main__ - Plotting histogram for column: MinTemp
+2026-02-18 18:04:43,101 INFO __main__ - Plotting scatter plot for columns: MinTemp, MaxTemp
+2026-02-18 18:05:35,452 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:05:35,595 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:05:35,792 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-18 18:05:35,845 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-18 18:05:35,846 INFO __main__ - Plotting histogram for column: MinTemp
+2026-02-18 18:05:37,618 INFO __main__ - Plotting scatter plot for columns: MinTemp, MaxTemp
+2026-02-18 18:06:49,157 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:06:49,292 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:06:49,469 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-18 18:06:49,522 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-18 18:06:49,522 INFO __main__ - Plotting histogram for column: MinTemp
+2026-02-18 18:06:51,050 INFO __main__ - Plotting scatter plot for columns: MinTemp, MaxTemp
+2026-02-18 18:07:28,467 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:07:28,598 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:07:28,765 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-18 18:07:28,816 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-18 18:07:28,817 INFO __main__ - Plotting histogram for column: MinTemp
+2026-02-18 18:07:29,924 INFO __main__ - Plotting scatter plot for columns: MinTemp, MaxTemp
+2026-02-18 18:07:41,463 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:07:41,586 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:07:41,757 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-18 18:07:41,807 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-18 18:07:41,808 INFO __main__ - Plotting histogram for column: MinTemp
+2026-02-18 18:07:43,017 INFO __main__ - Plotting scatter plot for columns: MinTemp, MaxTemp
+2026-02-18 18:08:07,727 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:08:07,853 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:08:08,020 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-18 18:08:08,072 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-18 18:08:08,072 INFO __main__ - Plotting histogram for column: MinTemp
+2026-02-18 18:08:09,841 INFO __main__ - Plotting scatter plot for columns: MinTemp, MaxTemp
+2026-02-18 18:08:46,822 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:08:46,954 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:08:47,120 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-18 18:08:47,170 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-18 18:08:47,171 INFO __main__ - Plotting histogram for column: MinTemp
+2026-02-18 18:08:48,777 INFO __main__ - Plotting scatter plot for columns: MinTemp, MaxTemp
+2026-02-18 18:10:02,412 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:10:02,538 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-18 18:10:02,742 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-18 18:10:02,808 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-18 18:10:02,809 INFO __main__ - Plotting histogram for column: MinTemp
+2026-02-18 18:10:49,965 INFO __main__ - Plotting scatter plot for columns: MinTemp, MaxTemp
+2026-02-26 19:43:52,042 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-26 19:43:52,199 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-26 19:43:52,394 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-26 19:43:52,451 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-26 19:43:52,452 INFO __main__ - Plotting histogram for column: MinTemp
+2026-02-26 19:43:54,658 INFO __main__ - Plotting scatter plot for columns: MinTemp, MaxTemp
+2026-02-26 19:45:27,426 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-26 19:45:27,552 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-26 19:45:27,718 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-26 19:45:27,778 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-26 19:58:28,878 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-26 19:58:29,016 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-26 19:58:29,220 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-26 19:58:29,275 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-26 20:00:17,460 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-26 20:00:17,586 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-26 20:00:17,750 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-26 20:00:17,805 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-26 21:00:45,276 INFO MyModule - Loading data from CSV file: data/Weather Training Data.csv
+2026-02-26 21:00:45,421 INFO MyModule - Data loaded successfully from CSV file: data/Weather Training Data.csv
+2026-02-26 21:00:45,422 INFO MyModule - Loading data from CSV file: data/non_existent_file.csv
+2026-02-26 21:00:45,423 ERROR MyModule - An error occurred while loading the data
+Traceback (most recent call last):
+  File "d:\Repositories\CS3720\MyModule.py", line 65, in fetch
+    data_frame = pd.read_csv(self.file_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/non_existent_file.csv'
+2026-02-26 21:00:45,441 INFO MyModule - Starting to yield values from column: MinTemp
+2026-02-26 21:00:45,442 INFO MyModule - Starting to yield pairs from columns: MinTemp, MaxTemp
+2026-02-26 21:00:46,307 INFO MyModule - Data saved to test_output\test_weather_data.csv
+2026-02-26 21:04:58,060 INFO MyModule - Loading data from CSV file: data/Weather Training Data.csv
+2026-02-26 21:04:58,193 INFO MyModule - Data loaded successfully from CSV file: data/Weather Training Data.csv
+2026-02-26 21:04:58,194 INFO MyModule - Loading data from CSV file: data/non_existent_file.csv
+2026-02-26 21:04:58,195 ERROR MyModule - An error occurred while loading the data
+Traceback (most recent call last):
+  File "d:\Repositories\CS3720\MyModule.py", line 65, in fetch
+    data_frame = pd.read_csv(self.file_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/non_existent_file.csv'
+2026-02-26 21:04:58,203 INFO MyModule - Starting to yield values from column: MinTemp
+2026-02-26 21:04:58,204 INFO MyModule - Starting to yield pairs from columns: MinTemp, MaxTemp
+2026-02-26 21:04:59,029 INFO MyModule - Data saved to test_output\test_weather_data.csv
+2026-02-26 21:06:38,401 INFO MyModule - Loading data from CSV file: data/Weather Training Data.csv
+2026-02-26 21:06:38,545 INFO MyModule - Data loaded successfully from CSV file: data/Weather Training Data.csv
+2026-02-26 21:06:38,546 INFO MyModule - Loading data from CSV file: data/non_existent_file.csv
+2026-02-26 21:06:38,547 ERROR MyModule - An error occurred while loading the data
+Traceback (most recent call last):
+  File "d:\Repositories\CS3720\MyModule.py", line 65, in fetch
+    data_frame = pd.read_csv(self.file_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/non_existent_file.csv'
+2026-02-26 21:06:38,555 INFO MyModule - Starting to yield values from column: MinTemp
+2026-02-26 21:06:38,556 INFO MyModule - Starting to yield pairs from columns: MinTemp, MaxTemp
+2026-02-26 21:06:39,372 INFO MyModule - Data saved to test_output\test_weather_data.csv
+2026-02-26 21:07:33,580 INFO __main__ - Loading data from CSV file: ./data/Weather Training Data.csv
+2026-02-26 21:07:33,716 INFO __main__ - Data loaded successfully from CSV file: ./data/Weather Training Data.csv
+2026-02-26 21:07:33,889 INFO __main__ - Starting to yield values from column: MinTemp
+2026-02-26 21:07:33,942 INFO __main__ - Starting to yield pairs from columns: MinTemp, Rainfall
+2026-02-26 21:09:40,327 INFO MyModule - Loading data from CSV file: data/Weather Training Data.csv
+2026-02-26 21:09:40,465 INFO MyModule - Data loaded successfully from CSV file: data/Weather Training Data.csv
+2026-02-26 21:09:40,466 INFO MyModule - Loading data from CSV file: data/non_existent_file.csv
+2026-02-26 21:09:40,467 ERROR MyModule - An error occurred while loading the data
+Traceback (most recent call last):
+  File "d:\Repositories\CS3720\MyModule.py", line 64, in fetch
+    data_frame = pd.read_csv(self.file_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/non_existent_file.csv'
+2026-02-26 21:09:40,474 INFO MyModule - Starting to yield values from column: MinTemp
+2026-02-26 21:09:40,475 INFO MyModule - Starting to yield pairs from columns: MinTemp, MaxTemp
+2026-02-26 21:09:42,533 INFO MyModule - Data saved to test_output\test_weather_data.csv
+2026-03-30 18:03:44,082 INFO MyModule - Loading data from CSV file: D:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-30 18:03:44,337 INFO MyModule - Data loaded successfully from CSV file: D:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-30 18:03:44,337 INFO app.routes - Weather data loaded: 99516 rows, 23 columns
+2026-03-30 18:03:44,441 INFO werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-30 18:03:44,442 INFO werkzeug - [33mPress CTRL+C to quit[0m
+2026-03-30 18:03:44,442 INFO werkzeug -  * Restarting with stat
+2026-03-30 18:03:45,332 INFO MyModule - Loading data from CSV file: D:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-30 18:03:45,481 INFO MyModule - Data loaded successfully from CSV file: D:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-30 18:03:45,481 INFO app.routes - Weather data loaded: 99516 rows, 23 columns
+2026-03-30 18:03:45,500 WARNING werkzeug -  * Debugger is active!
+2026-03-30 18:03:45,502 INFO werkzeug -  * Debugger PIN: 902-644-701
+2026-03-30 18:05:12,909 INFO werkzeug -  * Detected change in 'D:\\Repositories\\CS3720\\app\\__init__.py', reloading
+2026-03-30 18:05:13,086 INFO werkzeug -  * Restarting with stat
+2026-03-30 18:05:14,230 INFO MyModule - Loading data from CSV file: D:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-30 18:05:14,403 INFO MyModule - Data loaded successfully from CSV file: D:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-30 18:05:14,405 INFO app.routes - Weather data loaded: 99516 rows, 23 columns
+2026-03-30 18:05:14,430 WARNING werkzeug -  * Debugger is active!
+2026-03-30 18:05:14,433 INFO werkzeug -  * Debugger PIN: 902-644-701
+2026-03-30 18:07:39,150 INFO MyModule - Loading data from CSV file: d:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-30 18:07:39,298 INFO MyModule - Data loaded successfully from CSV file: d:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-30 18:07:39,298 INFO app.routes - Weather data loaded: 99516 rows, 23 columns
+2026-03-30 18:07:39,332 INFO werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-30 18:07:39,332 INFO werkzeug - [33mPress CTRL+C to quit[0m
+2026-03-30 18:07:39,333 INFO werkzeug -  * Restarting with stat
+2026-03-30 18:07:40,253 INFO MyModule - Loading data from CSV file: d:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-30 18:07:40,410 INFO MyModule - Data loaded successfully from CSV file: d:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-30 18:07:40,410 INFO app.routes - Weather data loaded: 99516 rows, 23 columns
+2026-03-30 18:07:40,429 WARNING werkzeug -  * Debugger is active!
+2026-03-30 18:07:40,433 INFO werkzeug -  * Debugger PIN: 902-644-701
+2026-03-30 18:07:53,519 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 18:07:53] "GET / HTTP/1.1" 200 -
+2026-03-30 18:07:53,788 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 18:07:53] "GET /static/style.css HTTP/1.1" 200 -
+2026-03-30 18:07:53,890 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 18:07:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-30 18:08:04,110 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 18:08:04] "POST /analyze HTTP/1.1" 200 -
+2026-03-30 18:08:04,434 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 18:08:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-30 18:08:06,901 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 18:08:06] "GET /history HTTP/1.1" 200 -
+2026-03-30 18:08:07,234 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 18:08:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-30 18:08:08,248 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 18:08:08] "GET / HTTP/1.1" 200 -
+2026-03-30 18:08:08,575 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 18:08:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-30 18:08:31,124 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 18:08:31] "POST /analyze HTTP/1.1" 200 -
+2026-03-30 18:08:31,448 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 18:08:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-30 18:08:39,654 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 18:08:39] "POST /analyze HTTP/1.1" 200 -
+2026-03-30 18:08:39,988 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 18:08:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-30 18:08:46,948 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 18:08:46] "GET / HTTP/1.1" 200 -
+2026-03-30 18:08:47,277 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 18:08:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-30 21:25:48,879 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 21:25:48] "POST /analyze HTTP/1.1" 200 -
+2026-03-30 21:25:49,024 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 21:25:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-30 21:25:52,389 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 21:25:52] "GET / HTTP/1.1" 200 -
+2026-03-30 21:25:52,724 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 21:25:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-30 21:25:56,837 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 21:25:56] "GET / HTTP/1.1" 200 -
+2026-03-30 21:25:57,168 INFO werkzeug - 127.0.0.1 - - [30/Mar/2026 21:25:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 21:44:14,469 INFO MyModule - Loading data from CSV file: d:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-31 21:44:14,617 INFO MyModule - Data loaded successfully from CSV file: d:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-31 21:44:14,618 INFO app.routes - Weather data loaded: 99516 rows, 23 columns
+2026-03-31 21:44:14,688 INFO werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-31 21:44:14,688 INFO werkzeug - [33mPress CTRL+C to quit[0m
+2026-03-31 21:44:14,690 INFO werkzeug -  * Restarting with stat
+2026-03-31 21:44:15,603 INFO MyModule - Loading data from CSV file: d:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-31 21:44:15,752 INFO MyModule - Data loaded successfully from CSV file: d:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-31 21:44:15,753 INFO app.routes - Weather data loaded: 99516 rows, 23 columns
+2026-03-31 21:44:15,772 WARNING werkzeug -  * Debugger is active!
+2026-03-31 21:44:15,775 INFO werkzeug -  * Debugger PIN: 902-644-701
+2026-03-31 21:44:44,926 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:44:44] "GET / HTTP/1.1" 200 -
+2026-03-31 21:44:44,964 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:44:44] "GET /static/style.css HTTP/1.1" 200 -
+2026-03-31 21:44:45,059 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:44:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-31 21:45:08,818 INFO MyModule - Loading data from CSV file: d:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-31 21:45:08,957 INFO MyModule - Data loaded successfully from CSV file: d:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-31 21:45:08,957 INFO app.routes - Weather data loaded: 99516 rows, 23 columns
+2026-03-31 21:45:08,982 INFO werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-31 21:45:08,982 INFO werkzeug - [33mPress CTRL+C to quit[0m
+2026-03-31 21:45:08,983 INFO werkzeug -  * Restarting with stat
+2026-03-31 21:45:10,017 INFO MyModule - Loading data from CSV file: d:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-31 21:45:10,160 INFO MyModule - Data loaded successfully from CSV file: d:\Repositories\CS3720\data\Weather Training Data.csv
+2026-03-31 21:45:10,161 INFO app.routes - Weather data loaded: 99516 rows, 23 columns
+2026-03-31 21:45:10,180 WARNING werkzeug -  * Debugger is active!
+2026-03-31 21:45:10,183 INFO werkzeug -  * Debugger PIN: 902-644-701
+2026-03-31 21:45:11,670 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:45:11] "GET / HTTP/1.1" 200 -
+2026-03-31 21:45:11,688 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:45:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 21:45:24,586 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:45:24] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 21:45:24,604 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:45:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 21:48:11,374 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:48:11] "GET / HTTP/1.1" 200 -
+2026-03-31 21:48:11,397 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:48:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 21:52:48,003 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:52:48] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 21:52:48,024 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:52:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 21:52:53,403 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:52:53] "GET /history HTTP/1.1" 200 -
+2026-03-31 21:52:53,424 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:52:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 21:52:55,094 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:52:55] "GET / HTTP/1.1" 200 -
+2026-03-31 21:52:55,118 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:52:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 21:52:56,408 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:52:56] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 21:52:56,429 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:52:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 21:53:05,743 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:53:05] "GET / HTTP/1.1" 200 -
+2026-03-31 21:53:05,767 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:53:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 21:53:12,472 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:53:12] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 21:53:12,492 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:53:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 21:59:42,859 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:59:42] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 21:59:42,876 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:59:42] "GET /static/style.css HTTP/1.1" 200 -
+2026-03-31 21:59:44,981 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:59:44] "GET / HTTP/1.1" 200 -
+2026-03-31 21:59:45,001 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:59:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 21:59:52,162 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:59:52] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 21:59:52,186 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:59:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 21:59:54,718 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:59:54] "GET / HTTP/1.1" 200 -
+2026-03-31 21:59:54,743 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 21:59:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:00:25,955 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:00:25] "GET / HTTP/1.1" 200 -
+2026-03-31 22:00:25,977 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:00:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:00:30,538 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:00:30] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 22:00:30,563 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:00:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:00:31,715 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:00:31] "GET / HTTP/1.1" 200 -
+2026-03-31 22:00:31,737 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:00:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:00:34,016 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:00:34] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 22:00:34,033 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:00:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:00:35,739 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:00:35] "GET /history HTTP/1.1" 200 -
+2026-03-31 22:00:35,762 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:00:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:00:38,373 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:00:38] "GET / HTTP/1.1" 200 -
+2026-03-31 22:00:38,402 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:00:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:01:04,664 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:01:04] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 22:01:04,694 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:01:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:01:06,111 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:01:06] "GET / HTTP/1.1" 200 -
+2026-03-31 22:01:06,132 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:01:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:01:08,090 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:01:08] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 22:01:08,114 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:01:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:01:09,201 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:01:09] "GET / HTTP/1.1" 200 -
+2026-03-31 22:01:09,225 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:01:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:01:13,234 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:01:13] "GET / HTTP/1.1" 200 -
+2026-03-31 22:01:13,254 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:01:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:01:13,421 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:01:13] "GET / HTTP/1.1" 200 -
+2026-03-31 22:01:13,443 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:01:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:01:14,397 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:01:14] "GET / HTTP/1.1" 200 -
+2026-03-31 22:01:14,416 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:01:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:02:04,377 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:02:04] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 22:02:04,397 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:02:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:02:13,057 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:02:13] "GET / HTTP/1.1" 200 -
+2026-03-31 22:02:13,079 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:02:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:02:16,652 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:02:16] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 22:02:16,672 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:02:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:02:29,071 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:02:29] "GET / HTTP/1.1" 200 -
+2026-03-31 22:02:29,100 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:02:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:02:34,905 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:02:34] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 22:02:34,930 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:02:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:02:43,564 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:02:43] "GET / HTTP/1.1" 200 -
+2026-03-31 22:02:43,586 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:02:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:02:52,606 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:02:52] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 22:02:52,632 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:02:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:04:24,125 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:04:24] "GET / HTTP/1.1" 200 -
+2026-03-31 22:04:24,146 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:04:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:04:27,816 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:04:27] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 22:04:27,838 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:04:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:04:32,879 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:04:32] "GET / HTTP/1.1" 200 -
+2026-03-31 22:04:32,907 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:04:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-31 22:04:37,504 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:04:37] "POST /analyze HTTP/1.1" 200 -
+2026-03-31 22:04:37,526 INFO werkzeug - 127.0.0.1 - - [31/Mar/2026 22:04:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-14 18:09:50,929 INFO MyModule - Loading data from CSV file: D:\Repositories\CS3720\data\Weather Training Data.csv
+2026-04-14 18:09:51,087 INFO MyModule - Data loaded successfully from CSV file: D:\Repositories\CS3720\data\Weather Training Data.csv
+2026-04-14 18:09:51,087 INFO app.routes - Weather data loaded: 99516 rows, 23 columns
+2026-04-14 18:09:51,150 INFO werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-14 18:09:51,150 INFO werkzeug - [33mPress CTRL+C to quit[0m
+2026-04-14 18:09:51,152 INFO werkzeug -  * Restarting with stat
+2026-04-14 18:09:52,090 INFO MyModule - Loading data from CSV file: D:\Repositories\CS3720\data\Weather Training Data.csv
+2026-04-14 18:09:52,236 INFO MyModule - Data loaded successfully from CSV file: D:\Repositories\CS3720\data\Weather Training Data.csv
+2026-04-14 18:09:52,237 INFO app.routes - Weather data loaded: 99516 rows, 23 columns
+2026-04-14 18:09:52,255 WARNING werkzeug -  * Debugger is active!
+2026-04-14 18:09:52,259 INFO werkzeug -  * Debugger PIN: 902-644-701
+2026-04-14 18:10:41,168 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:10:41] "GET / HTTP/1.1" 200 -
+2026-04-14 18:10:41,241 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:10:41] "GET /static/style.css HTTP/1.1" 200 -
+2026-04-14 18:10:41,309 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:10:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-14 18:10:52,363 INFO MyModule - Built previous two day features for columns: ['MinTemp', 'Rainfall', 'WindGustSpeed', 'WindSpeed9am', 'WindSpeed3pm', 'Humidity9am', 'Humidity3pm', 'Pressure9am', 'Pressure3pm', 'Cloud9am', 'Cloud3pm', 'Temp9am', 'Temp3pm', 'MaxTemp']
+2026-04-14 18:10:52,370 INFO MyModule - Built previous two day features for columns: ['MinTemp', 'Rainfall', 'WindGustSpeed', 'WindSpeed9am', 'WindSpeed3pm', 'Humidity9am', 'Humidity3pm', 'Pressure9am', 'Pressure3pm', 'Cloud9am', 'Cloud3pm', 'Temp9am', 'Temp3pm', 'MaxTemp']
+2026-04-14 18:10:56,706 INFO MyModule - Trained scikit-learn max temperature model using features: ['MinTemp_prev_day_1', 'MinTemp_prev_day_2', 'Rainfall_prev_day_1', 'Rainfall_prev_day_2', 'WindGustSpeed_prev_day_1', 'WindGustSpeed_prev_day_2', 'WindSpeed9am_prev_day_1', 'WindSpeed9am_prev_day_2', 'WindSpeed3pm_prev_day_1', 'WindSpeed3pm_prev_day_2', 'Humidity9am_prev_day_1', 'Humidity9am_prev_day_2', 'Humidity3pm_prev_day_1', 'Humidity3pm_prev_day_2', 'Pressure9am_prev_day_1', 'Pressure9am_prev_day_2', 'Pressure3pm_prev_day_1', 'Pressure3pm_prev_day_2', 'Cloud9am_prev_day_1', 'Cloud9am_prev_day_2', 'Cloud3pm_prev_day_1', 'Cloud3pm_prev_day_2', 'Temp9am_prev_day_1', 'Temp9am_prev_day_2', 'Temp3pm_prev_day_1', 'Temp3pm_prev_day_2', 'MaxTemp_prev_day_1', 'MaxTemp_prev_day_2', 'Location']
+2026-04-14 18:10:56,723 INFO MyModule - Trained scikit-learn max temperature model using features: ['MinTemp_prev_day_1', 'MinTemp_prev_day_2', 'Rainfall_prev_day_1', 'Rainfall_prev_day_2', 'WindGustSpeed_prev_day_1', 'WindGustSpeed_prev_day_2', 'WindSpeed9am_prev_day_1', 'WindSpeed9am_prev_day_2', 'WindSpeed3pm_prev_day_1', 'WindSpeed3pm_prev_day_2', 'Humidity9am_prev_day_1', 'Humidity9am_prev_day_2', 'Humidity3pm_prev_day_1', 'Humidity3pm_prev_day_2', 'Pressure9am_prev_day_1', 'Pressure9am_prev_day_2', 'Pressure3pm_prev_day_1', 'Pressure3pm_prev_day_2', 'Cloud9am_prev_day_1', 'Cloud9am_prev_day_2', 'Cloud3pm_prev_day_1', 'Cloud3pm_prev_day_2', 'Temp9am_prev_day_1', 'Temp9am_prev_day_2', 'Temp3pm_prev_day_1', 'Temp3pm_prev_day_2', 'MaxTemp_prev_day_1', 'MaxTemp_prev_day_2', 'Location']
+2026-04-14 18:10:56,726 INFO MyModule - Built tomorrow prediction input for location: Adelaide
+2026-04-14 18:10:56,745 INFO MyModule - Built tomorrow prediction input for location: Adelaide
+2026-04-14 18:10:56,756 INFO MyModule - Predictions made successfully.
+2026-04-14 18:10:56,757 INFO MyModule - Predictions made successfully.
+2026-04-14 18:10:56,775 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:10:56] "POST /analyze HTTP/1.1" 200 -
+2026-04-14 18:10:56,785 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:10:56] "POST /analyze HTTP/1.1" 200 -
+2026-04-14 18:10:56,805 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:10:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-14 18:11:05,497 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:05] "GET / HTTP/1.1" 200 -
+2026-04-14 18:11:05,522 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-14 18:11:13,352 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:13] "[31m[1mPOST /analyze HTTP/1.1[0m" 400 -
+2026-04-14 18:11:13,381 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-14 18:11:15,547 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:15] "GET / HTTP/1.1" 200 -
+2026-04-14 18:11:15,572 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-14 18:11:26,169 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:26] "POST /analyze HTTP/1.1" 200 -
+2026-04-14 18:11:26,194 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-14 18:11:32,218 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:32] "GET / HTTP/1.1" 200 -
+2026-04-14 18:11:32,244 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-14 18:11:35,236 INFO MyModule - Built tomorrow prediction input for location: AliceSprings
+2026-04-14 18:11:35,247 INFO MyModule - Predictions made successfully.
+2026-04-14 18:11:35,248 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:35] "POST /analyze HTTP/1.1" 200 -
+2026-04-14 18:11:35,269 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-14 18:11:37,508 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:37] "GET /history HTTP/1.1" 200 -
+2026-04-14 18:11:37,534 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-14 18:11:39,012 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:39] "GET / HTTP/1.1" 200 -
+2026-04-14 18:11:39,038 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-14 18:11:43,235 INFO MyModule - Built tomorrow prediction input for location: Dartmoor
+2026-04-14 18:11:43,249 INFO MyModule - Predictions made successfully.
+2026-04-14 18:11:43,251 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:43] "POST /analyze HTTP/1.1" 200 -
+2026-04-14 18:11:43,269 INFO werkzeug - 127.0.0.1 - - [14/Apr/2026 18:11:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-14 18:12:35,270 INFO werkzeug -  * Detected change in 'D:\\Repositories\\CS3720\\MyModule.py', reloading
+2026-04-14 18:12:35,594 INFO werkzeug -  * Restarting with stat

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Weather Analyzer — Home{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>Australian Weather Data Analyzer</h1>
+    <p class="subtitle">
+        Select options and run an analysis.
+    </p>
+
+    <form action="{{ url_for('main.analyze') }}" method="POST" id="analyze-form">
+
+        <div class="form-group">
+            <label for="analysis_type">Analysis Type</label>
+            <select name="analysis_type" id="analysis_type" onchange="toggleFields()">
+                <option value="describe">Descriptive Statistics</option>
+                <option value="missing">Missing Values Summary</option>
+                <option value="histogram">Histogram</option>
+                <option value="scatter">Scatter Plot</option>
+                <option value="bar">Totals by Location (Bar Chart)</option>
+                <option value="predict_max_temp">Predict Tomorrow's Max Temp</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="column">Column</label>
+            <select name="column" id="column">
+                {% for col in columns %}
+                <option value="{{ col }}">{{ col }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group" id="second-col-group" style="display:none;">
+            <label for="second_column">Second Column <span class="hint">(scatter plot only)</span></label>
+            <select name="second_column" id="second_column">
+                {% for col in columns %}
+                <option value="{{ col }}">{{ col }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group" id="location-group">
+            <label for="location">Filter by Location <span class="hint">(optional)</span></label>
+            <select name="location" id="location">
+                <option value="">— All Locations —</option>
+                {% for loc in locations %}
+                <option value="{{ loc }}">{{ loc }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <button type="submit" class="btn-primary">Run Analysis →</button>
+    </form>
+</div>
+
+<script>
+function toggleFields() {
+    const type = document.getElementById("analysis_type").value;
+    const secondCol = document.getElementById("second-col-group");
+    const locGroup  = document.getElementById("location-group");
+    const columnGroup = document.getElementById("column").closest(".form-group");
+
+    secondCol.style.display = (type === "scatter") ? "block" : "none";
+    // Bar chart groups by location automatically — no filter needed
+    locGroup.style.display  = (type === "bar" || type === "missing") ? "none" : "block";
+    columnGroup.style.display = (type === "predict_max_temp") ? "none" : "block";
+}
+
+toggleFields();
+</script>
+{% endblock %}

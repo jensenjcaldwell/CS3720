@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}Weather Analyzer{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('main.index') }}">Weather Analyzer</a>
+        <div class="nav-links">
+            <a href="{{ url_for('main.index') }}">Home</a>
+            <a href="{{ url_for('main.history') }}">Query History</a>
+        </div>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

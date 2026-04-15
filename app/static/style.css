@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #222;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 12px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 16px;
+}
+
+.subtitle {
+    margin-bottom: 14px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 6px;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #999;
+    background: #f5f5f5;
+    color: #222;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.actions {
+    margin-top: 16px;
+}
+
+.info-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 12px 0;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.chart-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.error-message {
+    color: #900;
+}
+
+footer {
+    text-align: center;
+    padding: 12px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}

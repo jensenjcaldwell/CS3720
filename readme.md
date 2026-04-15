@@ -1,4 +1,4 @@
-# Asignment 1
+# Asignment
 This project uses weather data to observe and predict weather trends
 
 ## Data souces
@@ -32,6 +32,10 @@ All data was sourced from the Kaggle Australia Weather Data set and can be found
             df_details(): Print details about the DataFrame including info, description, missing values, and shape.
             print_column_stats(): Print statistics for each column in the DataFrame.
             missing_values_summary(): Calculate total missing values in the DataFrame.
+            missing_values_summary_parallel(processes=None, chunks=4): Calculate total missing values using multiprocessing for large datasets.
+            column_describe_parallel(processes=None, chunks=4): Compute descriptive statistics for each column in parallel using multiprocessing.
+            column_scatter_plot(col1, col2): Create a scatter plot to visualize the relationship between two columns.
+            totals_by_location(column_name): Create a bar chart showing total values by location for a specified column.
             column_values_generator(column_name): Generator to yield values from a specified column.
             column_pairs_iterator(col1, col2): Generator to yield pairs of values from two specified columns. Useful for comparisons
 
@@ -45,6 +49,22 @@ All data was sourced from the Kaggle Australia Weather Data set and can be found
 
         Returns:
             str: Path to the saved file.
+    
+    Predictor
+        Class to handle weather prediction tasks using scikit-learn.
+
+        Methods:
+            __init__(data, model): Initialize Predictor with a DataFrame and optional trained model.
+            build_previous_two_day_features(feature_columns, group_column='Location', sort_columns=None, drop_missing_history=True): Build lagged feature columns from the previous two days for each selected weather variable.
+            build_tomorrow_prediction_input(feature_columns, location, group_column='Location', sort_columns=None): Build a single-row feature set for predicting tomorrow's weather for a specific location using its latest two rows of data.
+            train_sklearn_max_temp_model(feature_columns, target_column='MaxTemp', group_column='Location', sort_columns=None, include_group_column=True, model=None): Train a scikit-learn regression pipeline to predict tomorrow's maximum temperature from two-day lag features.
+            predict_max_temp_tomorrow(X): Use the trained scikit-learn model to predict tomorrow's maximum temperature.
+
+        Returns:
+            pd.DataFrame: For lag-building helper methods that generate model-ready features.
+            tuple: For model training, returns the trained pipeline and the training DataFrame with lag features.
+            np.ndarray: For prediction, returns the predicted maximum temperatures.
+
 
 ## Installation
 
@@ -103,3 +123,21 @@ Several OOP principles were implemented in this project, including:
 ## Testing
     Unit tests were written using pytest to test the csv_fetcher, data_analyzer, and DataStore classes. The tests cover various scenarios, including valid and invalid file paths for csv_fetcher, analysis of DataFrame details and missing values in data_analyzer, and saving DataFrames to CSV files in DataStore. The tests ensure that the classes behave as expected and handle edge cases appropriately.
 
+## Data Visualization
+    Data visualization was implemented in the data_analyzer class using matplotlib. The column_scatter_plot method creates scatter plots to visualize relationships between two columns, while the totals_by_location method generates bar charts to show total values by location. These visualizations help users understand trends and patterns in the weather data more effectively. Some test cases were added to the module to demonstrate the functionality of these visualization methods. These include showing total rainfall by location, plotting the relationship between minimum and maximum temperatures, and a histogram of rainfall distribution for a specific location.
+
+## Multiprocessing
+    Multiprocessing was implemented in the data_analyzer class to speed up the analysis of large datasets. The missing_values_summary_parallel method uses the multiprocessing module to divide the DataFrame into chunks and process them in parallel, significantly reducing the time taken to calculate missing values across large datasets. This is particularly beneficial when working with extensive weather data, allowing for faster insights and analysis. Additionally the column_describe_parallel method was implemented to compute descriptive statistics for each column in parallel, further enhancing the performance of data analysis tasks.
+
+## Adapting Data Analysis for PySpark
+    PySpark was added to make the same analysis workflow work better for larger datasets. Instead of reading files with pandas, data is loaded with Spark's DataFrameReader using schema inference. Analysis logic was updated to use pyspark.sql.functions so Spark can handle optimization and parallel execution automatically, replacing the need for manual multiprocessing. For sampling and iteration-style tasks, Spark actions such as .limit() and .collect() are used when needed. This keeps the project structure similar while improving scalability beyond what a single machine's memory can support.
+
+## Web Application
+    A web application was developed using Flask to provide a user-friendly interface for uploading weather data files and performing analysis. The application allows users to select different types of analysis (descriptive statistics, missing values summary, histograms, scatter plots, and bar charts) through a dropdown menu. The results of the analysis are displayed on the webpage, and users can also download the results as CSV files. This web interface makes it easier for users who may not be comfortable with command-line tools to interact with the data and gain insights from it.
+
+    The required packages for the web application can be found in the requirements.txt file, which includes Flask for the web framework, SQLAlchemy for database interactions (if needed), and other libraries for data analysis and visualization. 
+
+    To launch the web application, users can run the WebApp.py script, which will start the Flask development server. The application can then be accessed through a web browser at the specified local address (e.g., http://localhost:5000).
+
+## Predictive Modeling
+    A predictive modeling component was implemented using scikit-learn to predict tomorrow's maximum temperature from the previous two days of weather data. The Predictor class now includes helper methods for building two-day lag features, preparing a single prediction row for a selected location, training a regression pipeline, and generating predictions. The current implementation uses lagged weather measurements such as temperature, humidity, pressure, rainfall, cloud cover, and wind speed, along with location information, so the project can move beyond analysis into forecast-style modeling.

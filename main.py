@@ -57,3 +57,12 @@ if __name__ == "__main__":
     else:
         print(" Data failed to load. Please check the file path.")
 
+
+    # Example of plotting a column
+    analyzer_instance.column_plotter('MinTemp', "Sydney")
+
+    # Example of plotting a scatter plot
+    analyzer_instance.column_scatter_plot('MinTemp', 'MaxTemp')
+
+    # Example of totals by location
+    analyzer_instance.totals_by_location('Rainfall')

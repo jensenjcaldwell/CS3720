@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Query History{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1> Query History</h1>
+    <p class="subtitle">
+        All analysis requests are persisted in the SQLite database via SQLAlchemy.
+    </p>
+
+    {% if entries %}
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Timestamp</th>
+                    <th>Analysis Type</th>
+                    <th>Column</th>
+                    <th>Second Column</th>
+                    <th>Location Filter</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for e in entries %}
+                <tr>
+                    <td>{{ e.id }}</td>
+                    <td>{{ e.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+                    <td><span class="tag">{{ e.analysis_type }}</span></td>
+                    <td>{{ e.column_name }}</td>
+                    <td>{{ e.second_column or '—' }}</td>
+                    <td>{{ e.location_filter or 'All' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="info-box">
+        No queries yet. <a href="{{ url_for('main.index') }}">Run your first analysis!</a>
+    </div>
+    {% endif %}
+
+    <div class="actions">
+        <a href="{{ url_for('main.index') }}" class="btn-secondary">← Back to Home</a>
+    </div>
+</div>
+{% endblock %}

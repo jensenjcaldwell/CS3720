@@ -1,0 +1,9 @@
+# Required Packages
+
+flask
+flask-sqlalchemy
+sqlalchemy
+matplotlib
+pandas
+numpy
+scikit-learn
